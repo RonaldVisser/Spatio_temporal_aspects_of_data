@@ -5,6 +5,6 @@ authors:
     given-names: Ronald
     orcid: "https://orcid.org/0000-0001-6966-1729"
 title: "Spatial and temporal aspects of the Roman dendo-archaeological dataset"
-doi:
+doi: https://zenodo.org/doi/10.5281/zenodo.13825250
 date-released: 2024-03-10
 url: "https://github.com/RonaldVisser/Spatio_temporal_aspects_of_data"
