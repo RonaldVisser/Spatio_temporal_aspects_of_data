@@ -1,4 +1,4 @@
-# Spatial and temporal aspects of the dendro-archaeological dataset
+# Spatial and temporal aspects of the dendroarchaeological dataset
 
 [![DOI](https://zenodo.org/badge/769931320.svg)](https://zenodo.org/doi/10.5281/zenodo.13825250)
 
