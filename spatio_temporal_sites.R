@@ -95,8 +95,8 @@ for (i in centuries_half) {
   ggsave(paste0("export/maps_spatio_temp_50/spatio_temporal_", gsub(" ", "_", start_yr), "_to_", gsub(" ", "_", end_yr), ".png"), get(paste0("map_50_", i)))
 }
 
-ggarrange(`map_50_-100`, `map_50_-50`, map_50_0, map_50_50, map_50_100, map_50_150, map_50_200, map_50_250, map_50_300, map_50_350, map_50_400, map_50_450, map_50_500, nrow = 5, ncol = 4)
-ggsave("export/maps_spatio_temp_50/spatio_temporal_overview.png", width = 7, height = 14, dpi = 600)
+ggarrange(`map_50_-100`, `map_50_-50`, map_50_0, map_50_50, map_50_100, map_50_150, map_50_200, map_50_250, map_50_300, map_50_350, map_50_400, map_50_450, map_50_500, nrow = 4, ncol = 4)
+ggsave("export/maps_spatio_temp_50/spatio_temporal_overview.png", width = 9, height = 16, dpi = 600)
 
 
 
