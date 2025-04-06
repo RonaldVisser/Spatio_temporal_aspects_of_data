@@ -63,8 +63,8 @@ for (i in centuries) {
   ggsave(paste0("export/maps_spatio_temp_100/spatio_temporal_", gsub(" ", "_", start_yr), "_to_", gsub(" ", "_", end_yr), ".png"), get(paste0("map_100_", i)))
 }
 
-ggarrange(`map_100_-100`, map_100_0, map_100_100, map_100_200, map_100_300, map_100_400, map_100_500, nrow = 2, ncol = 4)
-ggsave("export/maps_spatio_temp_100/spatio_temporal_overview.png", width = 10, height = 7)
+ggarrange(`map_100_-100`, map_100_0, map_100_100, map_100_200, map_100_300, map_100_400, map_100_500, nrow = 3, ncol = 3)
+ggsave("export/maps_spatio_temp_100/spatio_temporal_overview.png", width = 6, height = 10, dpi = 600)
 
 for (i in centuries_half) {
   sites <- sites_dates %>% filter(latest <= i & latest > (i-50) )
@@ -95,8 +95,8 @@ for (i in centuries_half) {
   ggsave(paste0("export/maps_spatio_temp_50/spatio_temporal_", gsub(" ", "_", start_yr), "_to_", gsub(" ", "_", end_yr), ".png"), get(paste0("map_50_", i)))
 }
 
-ggarrange(`map_50_-100`, `map_50_-50`, map_50_0, map_50_50, map_50_100, map_50_150, map_50_200, map_50_250, map_50_300, map_50_350, map_50_400, map_50_450, map_50_500, nrow = 3, ncol = 5)
-ggsave("export/maps_spatio_temp_50/spatio_temporal_overview.png", width = 12, height = 10)
+ggarrange(`map_50_-100`, `map_50_-50`, map_50_0, map_50_50, map_50_100, map_50_150, map_50_200, map_50_250, map_50_300, map_50_350, map_50_400, map_50_450, map_50_500, nrow = 5, ncol = 4)
+ggsave("export/maps_spatio_temp_50/spatio_temporal_overview.png", width = 7, height = 14, dpi = 600)
 
 
 
